@@ -1,0 +1,440 @@
+@font-face 
+{
+    font-family: 'Pifont';
+    src: url('font/pifont-webfont.woff2') format('woff2'),
+         url('font/pifont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'MuseoSans_500';
+    src: url('font/MuseoSans_500-webfont.woff2') format('woff2'),
+         url('font/MuseoSans_500-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'Janson';
+    src: url('font/JansonSSi.woff2') format('woff2'),
+        url('font/JansonSSi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+
+@font-face
+{
+    font-family: 'Minipax';
+    src: url('font/Minipax-Regular.woff2') format('woff2'),
+         url('font/Minipax-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face{
+font-family: effra, sans-serif;
+font-style: normal;
+font-weight: 300;
+}
+
+@font-face{
+font-family: ff-spinoza-web-pro, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+
+
+@font-face
+{
+    font-family: 'STFU';
+    src: url('font/STFU.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'Rude';
+    src: url('font/Rude.woff2') format('woff2');
+    src: url('font/Rude.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	background-color: #f5f5f5;
+	font-family: 'ff-spinoza-web-pro', monospace;
+	font-size: 16pt;
+    color: #222222;
+    width: 100%;
+    margin: 0px;
+    line-height: 1.8;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+}
+
+
+:root
+{
+	--dark-text:#222222;
+
+}
+
+
+
+
+h1, h2, h3, h4, h5
+{
+	font-family:'Rude';
+    font-size: 2.5em;
+	
+}
+
+img
+{
+	display: block;
+	margin:auto;
+
+
+}
+
+}
+
+.smallCaps
+{
+	font-variant:small-caps;
+	font-family:sans-serif;
+}
+
+.unitBox:a
+{
+    color: #00a141;
+}
+
+a:visited {
+  color: #222222;
+}
+
+.topLink
+{
+	line-height: 1.7;
+    color: #222222;
+    
+
+}
+
+.topLink:hover
+{
+	text-decoration:underline;
+	cursor: pointer;
+    color: #222222;
+}
+
+.topLink:a{
+    color: #22222;
+}
+
+.topLink:a:hover{
+    color: #222222;
+}
+
+.topLink:a:visited{
+    color: #222222;
+}
+
+.icon
+{
+	width: 40px;
+	height: 40px;
+}
+
+
+
+
+.wrapper
+{
+	width: 1200px;
+	background-color: #ffffff;
+	margin: auto;
+
+	box-shadow: 0 4px 4px -5px #aaaaaa;
+
+	overflow: hidden;
+
+}
+
+.spacer
+{
+	height:100px;
+	width:100%;
+	clear:right;
+	float:left;
+
+}
+
+.resume{
+    padding: 19px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Style the header */
+.header {
+  padding-top: 10px;
+    padding-bottom: 20px;
+  background: #ffffff;
+    height: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-family:'effra';
+    z-index: 10;
+    box-shadow: 0 4px 4px -5px #aaaaaa;
+    font-size: 15.5pt;
+    line-height: 1.4;
+    
+}
+
+.header1 {
+  padding-top: 5px;
+    padding-bottom: 10px;
+  background: #ffffff;
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-family:'effra';
+    z-index: 5;
+    box-shadow: 0 4px 4px -5px #aaaaaa
+    
+}
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content, content1 {
+  padding-top: 55px;
+}
+
+
+
+
+.top-container {
+  all: inherit;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+    font-size: 60px;
+    font-weight:600;
+    font-family:'STFU';
+}
+
+
+
+
+.name
+{
+	font-size: 64px;
+	float:left;
+	padding-right:0%;
+	width:42%;
+    font-family:'effra';
+	
+}
+
+.labels
+{
+    font-family:'effra';
+	padding-top:3%;
+	font-size: 32px;
+	float:left;
+	width:42%;
+	text-align:right;
+		
+}
+
+.row
+{
+	display:block;
+
+}
+
+
+.leftBox
+{
+	width: 42%;
+	float: left;
+	color: var(--dark-text);
+	margin: 4%;
+	text-align: justify;
+
+
+}
+
+.leftBoxDark
+{
+	width: 42%;
+	float: left;
+	color: #333333;	
+	padding: 4%;
+	text-align: left;
+	font-size:14pt;
+
+}
+
+
+.bigBox
+{
+	width: 92%;
+	float: left;
+	color: #333333;
+	margin: 4%;
+	text-align: justify;
+
+
+}
+
+.rightBox
+{
+	width: 42%;
+	float: left;
+	color: #333333;
+	margin:4%;
+	text-align: center;
+	
+}
+
+.content, .content1
+{
+	margin-bottom:50px;
+	display:inline-block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+
+}
+
+.scrll{
+    height: 1000px;
+    overflow-y: scroll;
+    
+}
+
+.contentBar
+{
+	
+	float: left;
+	text-align: center;
+	width:100%;
+    margin-bottom: 4%;
+    font-family:'effra';
+}
+
+.overlay{
+    filter: brightness(100%);
+}
+
+
+.tabs:hover
+{
+	text-decoration:underline;
+}
+
+@media only screen and (max-width: 1440px) 
+{
+	
+}
+
+
+@media only screen and (max-width: 1200px) 
+{
+	.name
+	{
+		width: 92%;
+	}
+
+	.labels
+	{
+		text-align: left;
+	}
+
+		
+}
+
+@media only screen and (max-width: 1200px)
+{
+	
+	.leftBox
+	{
+		width: 92%;
+	}
+	
+	.leftBoxDark
+	{
+		width: 92%;
+	}
+	
+	.rightBox
+	{
+		width: 92%;
+	}
+	
+}
+
+@media only screen and (max-width: 1080px) 
+{
+	.content, .content1
+	{
+		width:100%;
+        margin-left: 0%;
+        margin-right: 0%;
+
+	}
+	
+	
+
+		
+}
+
+
+.unitBox{
+    background-color: #ffffff;
+    float:left;
+    width: 100%;
+    box-shadow: 0 4px 4px -5px #aaaaaa;
+    margin-bottom: 4%;
+}
+
+
+
+
+
+#has-drop-cap:first-letter{
+  font-family: "Rude";
+  font-size: 3.375em;
+  line-height: 1;
+ font-weight: normal;
+  margin: 0 0.25em 0 0;
+    float: left;
+    
+    
+}
+

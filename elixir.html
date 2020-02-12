@@ -1,0 +1,448 @@
+<html>
+<head> 
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="elixir/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="elixir/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="elixir/favicon/favicon-16x16.png">
+<link rel="manifest" href="elixir/favicon/site.webmanifest">
+<link rel="mask-icon" href="elixir/favicon/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="elixir/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="msapplication-config" content="elixir/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    
+   <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Donegal+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://use.typekit.net/oxk8pic.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
+    <style>
+        
+        @font-face
+{
+    font-family: 'Colonna MT';
+    src: url('elixir/ColonnaMT.woff2') format('woff2'),
+        url('elixir/ColonnaMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+        
+        :root{
+            --x: 210px;
+            --y: 130px;
+            --z: 80px;
+            --a: 60px;
+            --b: 10px;
+            
+            --dark: #00a141;
+            --med:  #17bd5a;
+            --light: #39c672;
+            --white: #ffffff;
+            
+            
+        }
+        
+        
+        
+
+        
+        body{
+            background-color: var(--white);
+            font-family: 'effra', sans-serif;
+            color: var(--dark);
+            font-size: 5em;
+            font-weight: 400;
+            margin: 0;
+            overflow-x: hidden;
+            
+            
+        }
+        
+        div{
+            
+            
+            display: inline-block;
+            
+            
+        }
+        
+     
+        
+        p{
+            margin: auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 140px;
+        }
+        
+    
+        .box
+        {
+            width: 510px;
+            height: 510px;
+            margin: auto;
+            background-color: var(--dark);
+             position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -255px;
+            margin-top: -255px;
+        
+            
+        }
+        
+        .middle
+        
+        {
+            width: var(--x);
+            height: var(--x);
+            background-color: var(--white);
+            float: left;
+            margin-left: var(--b);
+            vertical-align: middle;
+            text-align: center;
+           
+            
+         
+        }
+    
+        .small
+        {
+            width: var(--y);
+            height: var(--y);
+            background-color: var(--white);
+            float: left;
+            margin-left: var(--b);
+            transition: transform .2s;
+            text-align: center;
+            position: relative;
+            
+            
+        }
+        
+        .small:hover{
+            transform: scale(1.02);
+                cursor: pointer;
+        }
+        
+        .wide
+        {
+            width: var(--x);
+            height: var(--y);
+            background-color: var(--white);
+            float: left;
+            font-family: "Colonna MT";
+            font-weight: 500;
+            transition: transform .2s;
+            
+            
+        }
+        
+        .wide:hover{
+            transform: scale(1.02)
+        }
+        
+        .wideSpace{
+            height: var(--a);
+            width: var(--y);
+            
+            
+        }
+        
+        .tall
+        {
+            position: relative;
+            width: var(--y);
+            height: var(--x);
+            background-color: var(--white);
+            float: left;
+            transition: all .2s;
+            text-align: center;
+            box-shadow: 0 0 0 black;
+
+        }
+        
+        .tall::after
+        {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: var(--white);
+            float: left;
+            transition: all .2s;
+            text-align: center;
+            opacity: 0;
+             box-shadow: 4px 4px 0px 0px rgba(0,0,0,.1);
+            z-index: -1;
+             top: 0;
+            left: 0;
+
+        }
+        
+        
+        .tall:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+           
+        }
+        
+        .tall:hover::after{
+            opacity: 1;
+        }
+        
+        .tallSpace{
+            float: left;
+            height: var(--y);
+            width: var(--a);
+            margin-left: var(--b);
+            
+            
+        }
+        
+        .one{
+            
+            width: 370px;
+            height: 550px;
+            float: left;
+
+            
+            
+        }
+        
+        .two{
+            width:130px;
+            height: 500px;
+            float: left;
+            
+            
+        }
+        
+        .holder{
+           margin: var(--b);
+            margin-bottom: 0px;
+        }
+        
+        .icon{
+            width: 33px;
+            height: 33px;
+            background-color: var(--dark);
+            margin-bottom: var(--b);
+            float: right;
+            transition: transform .2s;
+            
+            
+        }
+        
+        .icon:hover{
+            transform: scale(1.02);
+            box-shadow: 10px,10px,10px,black;
+            cursor: pointer;
+        }
+        
+        .vertText
+        {
+             line-height: 1;
+    letter-spacing: 0.2em;
+    font-size: 48;
+    text-align: left;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-rl;
+            padding-top: 10px;
+            
+        }
+        
+        img{
+            
+            vertical-align: middle;
+            
+        }
+        
+        .helper{
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        
+        .top{
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--dark);
+        }
+        
+        .content{
+            margin-left: 18vw;
+            margin-right: 18vw;
+            width: 64vw;
+
+            
+            
+        }
+        
+        .a
+        {
+            width: 36%;
+            float: left;
+            background-color: white;
+            
+            
+        }
+        
+        .ab{
+            width: 64%;
+            float: left;
+            font-size: .4em;
+            background-color: white;
+        }
+        
+        .row{
+            
+            margin-top: 100px;
+            width: 100%; 
+            
+        }
+        
+        .colo{
+            font-family: "Colonna MT";
+            font-size: 1.1em;
+        }
+        
+        hr{
+            margin-top: 0;
+            margin-bottom: 2px;
+            border: 1px solid var(--dark);
+            width: 5%;
+            margin-left: 0;
+        }
+        
+        form{
+            
+            height: 100%; 
+            width: 100%;
+            
+        }
+        
+        input{
+            
+            height: 100%; 
+            width: 100%;
+            font-family: effra;
+            font-size: 30;
+            color: var(--med);
+        }
+        
+        input:placeholder{
+            color: var(--light);
+        }
+        
+  
+        
+    
+    </style>
+    
+    
+</head>
+
+    <body>
+    <div class = "top">
+        <div class = "box">
+            <div class = "one">
+                <div class = "holder">
+                <div class = "wide"><p>elixir</p></div>
+                <div class = "small search"><span class = "helper"></span><img src = "elixir/search.svg" width = 40%></div>
+                    </div><div class = "holder">
+                <div class = "tall shop"><div class="vertText shop">enter shop</div></div>
+                <div class = "middle"><span class = "helper"></span><img src="elixir/elixir_med.png" width="79%" style="margin-left: -5px; margin-bottom: -5px"></div>
+                </div>
+                <div class = "holder">
+                <div class = "tallSpace">
+                    <div class = "icon"><span class = "helper"></span><img src = "elixir/instagram.svg" width = 100%></div>
+                    <div class = "icon"><span class = "helper"></span><img src = "elixir/twitter.svg" width = 100%></div>
+                    <div class = "icon"><span class = "helper"></span><img src = "elixir/facebook.svg" width = 100%></div>
+                    </div>
+                <div class = "small"><span class = "helper"></span><img src = "elixir/feather.svg" width = 40%></div>
+                <div class = "small"><span class = "helper"></span><img src = "elixir/map.svg" width = 40%></div>
+            </div>
+            </div>
+            
+            <div class = "two">
+                <div class = "wideSpace sandy"></div>
+                <div class = "tall about" style = "margin-top: 10px;"><div class="vertText about">about</div></div>
+                <div class = "tall news" style = "margin-top: 10px;"><div class="vertText news">news</div></div>
+            </div>
+            
+        
+        </div>
+    
+    </div>
+        <div class = "content"> 
+            <div class = "row colo" style = "text-align: center;">welcome to . . .</div>
+            <div style= "width: 100%; text-align: center;">
+        
+                <img src = "elixir/elixirW_full-01.jpg" srcset = "elixir/elixirW_full-01.jpg, elixir/elixirW_full@2x.jpg 2x">
+        
+            </div>
+            
+            <div class = "row colo shopRow">shop<hr><hr></div>
+            
+            
+            <div class = "row">
+            <div class = "a"><img src ="elixir/elixir_full.png" width = 70%></div>
+            <div class = "ab">This is the base logo.</div>
+                
+                </div>
+            <div class = "row">
+            <div class = "a"><img src ="elixir/elixir_med.png" width = 70%></div>
+            <div class = "ab">This version has less small details so it looks better at lower resolutions and smaller renderings.</div>
+                
+                </div>
+            <div class = "row">
+            <div class = "a"><img src ="elixir/elixir_small.png" width = 70%></div>
+            <div class = "ab">This smallest version is used at the icon level (i.e. favicons, very small wordmarks, etc.)</div>
+                
+                </div>
+            
+            <div class = "row colo aboutRow">about<hr><hr></div>
+            
+            
+            <div class = "row">
+            
+            <div class = "ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class = "a">Lorem Ipsum </div>
+                </div>
+            
+            <div class = "row colo newsRow">news<hr><hr></div>
+            
+            
+            <div class = "row">
+            <div class = "a">how it all began </div>
+            <div class = "ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                
+                </div>
+            
+            <div class = "row">
+            
+            <div class = "ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                <div class = "a"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24750.28321280663!2d175.61463900610408!3d-39.156862339996124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6baa27ec720edb%3A0xd9b9daf35e3dc59!2sMt%20Ngauruhoe!5e0!3m2!1sen!2sus!4v1573766815222!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> </div>
+                
+                </div>
+            
+            <div class = "row"></div>
+            
+            
+            
+            
+        </div>
+        <script src = "elixir/script.js"></script>
+    </body>
+    
+
+
+</html>
